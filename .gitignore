@@ -1,0 +1,79 @@
+# =========================
+# Dependencies
+# =========================
+node_modules/
+
+# =========================
+# Build output
+# =========================
+dist/
+build/
+out/
+coverage/
+
+# =========================
+# Framework / bundler caches
+# =========================
+.angular/
+.next/
+.nuxt/
+.svelte-kit/
+.vite/
+.cache/
+.parcel-cache/
+.turbo/
+
+# =========================
+# Environment files
+# =========================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# =========================
+# Logs
+# =========================
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =========================
+# Package manager cache
+# =========================
+.npm/
+.pnpm-store/
+.yarn/cache/
+.yarn/unplugged/
+
+# =========================
+# TypeScript
+# =========================
+*.tsbuildinfo
+
+# =========================
+# IDE / Editors
+# =========================
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# =========================
+# Operating system files
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Temporary files
+# =========================
+*.tmp
+*.temp
+*.bak
