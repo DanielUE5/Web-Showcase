@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Заедно за топло бъдеще"</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body1">
+
+<header>
+    <div class="logo">
+        <img src="logo.jpg" alt="Logo">
+    </div>
+    <h1>Дарение за топло бъдеще!</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html"><button>Начална страница</button></a></li>
+            <li><a href="About us.html"><button>За нас</button></a></li>
+            <li><a href="Make a donation.html"><button>Направете дарение</button></a></li>
+            <li><a href="Contacts.html"><button>Контакти</button></a></li>
+        </ul>
+    </nav>
+</header>
+
+        <section id="dareniq">
+
+            <form action="#" method="post" enctype="application/x-www-form-urlencoded" onsubmit="SayThanks()">
+
+                <h1>Направете дарение</h1>
+
+                <!-- Лични данни -->
+                
+            <div class="d1">
+                <label for="first-name">Име:</label>
+                <input type="text" id="first-name" name="first_name" placeholder="Иван"  pattern="^[a-zA-ZА-Яа-я]+$" required>
+            </div>
+
+            <div class="d2">
+                <label for="middle-name">Второ име:</label>
+                <input type="text" id="middle-name" name="middle_name" placeholder="Иванов" pattern="^[a-zA-ZА-Яа-я]+$" required>
+            </div>
+
+            <div class="d3">
+                <label for="last-name">Фамилия:</label>
+                <input type="text" id="last-name" name="last_name" placeholder="Иванов" pattern="^[a-zA-ZА-Яа-я]+$" required>
+            </div>
+
+            <div class="d4">
+                <label for="age">Възраст:</label>
+                <input type="number" id="age" name="age" min="18" max="100" maxlength="3" pattern="^[0-9]+$" required>
+            </div>
+
+            <div class="d5">
+                <label for="phone">Тел.номер:</label>
+                <input type="tel" id="phone" name="phone" placeholder="0878 878 878" maxlength="10" pattern="0\d{9}" required>
+            </div>
+
+            <div class="d6">
+                <label for="city">Град:</label>
+                <input type="text" id="city" name="city" placeholder="София" pattern="^[a-zA-ZА-Яа-я]+$" required>
+            </div>
+
+            <div class="d7">
+                <label for="location">Адрес:</label>
+                <input type="text" id="location" name="location" required>
+            </div>    
+
+            <div class="d8">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="i_ivanov@gmail.com" required>
+            </div>
+
+            <div class="d9">
+                <label for="donation-amount">Сума за дарение (BGN):</label>
+                <input type="number" id="donation-amount" name="donation_amount" required>
+            </div>
+
+            <div class="d10">
+                <label for="campaign">Изберете кампания:</label>
+                <select id="campaign" name="campaign" required>
+                    <option value="campaign1">"Зимна Топлина" - Събиране на Зимни Дарения</option>
+                    <option value="campaign2">Кулинарен Фестивал "Вкусът на Доброто"</option>
+                    <option value="campaign3">Дари За Бъдещето: Ежегоден Благотворителен Базар</option>
+                    <option value="campaign4">За децата в нужда</option>
+                    <option value="campaign5">За бездомните хора</option>
+                    <option value="campaign6">За възрастните без семейства</option>
+                </select>
+            </div>
+
+            <div class="d12">
+                <label for="card-holder">Имена на притежателя на картата:</label>
+                <input type="text" id="card-holder" name="card_holder" placeholder="Daniel Ivanov" pattern="[A-Za-z]+(\s[A-Za-z]+)?$" required>
+            </div>
+    
+            <div class="d13">
+                <label for="card-number">Номер на карта:</label>
+                <input type="text" id="card-number" name="card_number" maxlength="16" pattern="^[0-9]{16}$" placeholder="0012 3456 7890 0000" required>
+            </div>
+
+            <div class="d14">
+                <label for="expire-date">Месец и година на изтичане:</label>
+                <input type="month" id="expire-date" name="expire-date" required>
+            </div>
+
+            <div class="d15">
+                <label for="cvv">CVV код:</label>
+                <input type="password" id="cvv" name="cvv" maxlength="3" pattern="^[0-9]{3}" required>
+            </div>
+
+                <!-- Кутийките за тикчета -->
+
+            <div class="checkboxes">  
+                &ensp;
+
+                <div>
+                    <label for="age-checkbox">Съгласявам, че имам навършени 18 години.</label>
+                    <input type="checkbox" id="age-checkbox" required>
+                </div>
+
+                <div>
+                    <label for="terms-checkbox">Съгласявам се с Общите правила и условия на сайта.</label>
+                    <input type="checkbox" id="terms-checkbox" required>
+                </div>
+            </div>
+
+                <!-- Екшън бутон -->
+
+            <div class="action-button">
+                <button type="submit" value="Изпрати">Направете дарение сега!</button>
+            </div>
+                
+            </form>
+
+        </section>
+
+<footer>
+    <p>&copy; 2023 "Заедно за топло бъдеще". Всички права са запазени.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
