@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Заедно за топло бъдеще"</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body1">
+
+<header> 
+    <div class="logo">
+        <img src="logo.jpg" alt="Logo">
+    </div>
+    <h1>Може да се свържете от тук</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html"><button>Начална страница</button></a></li>
+            <li><a href="About us.html"><button>За нас</button></a></li>
+            <li><a href="Make a donation.html"><button>Направете дарение</button></a></li>
+            <li><a href="Contacts.html"><button>Контакти</button></a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="kontakti">
+    <div>
+      <h1>Мнения и предложения за доразвитие на сайта</h1>
+        <p>Ако искате да се свържете с мен относно развитието на сайта, идеи или конкретни въпроси отнонсо нашата дейност, може да го направите оттук:</p>
+        <ul>
+            <li id="li1">Facebook: Даниел Иванов</li>
+            <li id="li2">Instagram: ivanoff7788</li>
+            <li id="li3">Abv-поща: daniel_ivanov_2003.1995@abv.bg</li>
+            <li id="li4">Студентска поща: f108841@students.nbu.bg</li>
+        </ul>
+            <p>Или попълнете формуляра: </p>
+
+            <form action="#" method="post" enctype="text/plain" onsubmit="remindUsers()">
+          <table>
+              <tr>
+                  <td>
+                      Име:
+                    </td>
+                    <td>
+                        <input type="text" id="first-name" name="first_name" placeholder="Иван"  pattern="^[a-zA-ZА-Яа-я]+$" required>
+                    </td>
+                </tr>
+                <tr>
+                  <td>
+                      E-mail: 
+                    </td>
+                    <td>
+                        <input type="email" id="email" name="email" placeholder="i_ivanov@gmail.com" required>
+                  </td>
+                </tr>
+              <tr>
+                  <td colspan="3">
+                      <textarea name="description" cols="67" rows="10" required placeholder="Въведете Вашите препоръки за нашия сайт, идеи или важни казуси."></textarea>
+                  </td>  
+          </table>
+
+          <div class="button-container">
+          <div id="action-button1" class="action-button">
+            <button type="submit" value="Изпрати">Изпрати</button>
+        </div>
+        <div id="action-button1" class="action-button">
+            <button type="reset" value="Изчисти">Изчисти</button>
+      </form>
+  </div>
+</div>
+</section>
+
+    
+<footer>
+    <p>&copy; 2023 "Заедно за топло бъдеще". Всички права са запазени.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
